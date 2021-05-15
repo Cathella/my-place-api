@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2021_05_15_191003) do
 
   create_table "districts", force: :cascade do |t|
     t.string "name"
+    t.text "about"
     t.integer "population"
     t.bigint "region_id"
     t.datetime "created_at", precision: 6, null: false
